@@ -1,0 +1,939 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:    Project Name
+Version:    1.0
+Last change:    24/03/17 [fixed Float bug, vf]
+Author Name: Author Name
+Primary use:    Project Type
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Body
+2.
+-------------------------------------------------------------------*/
+
+
+/*
+==========================================
+    Reset Css
+==========================================
+*/
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 700px;
+}
+
+.bg-img-1 {
+    background-image: url(../img/header-bg-1-small.jpg);
+    width: 100%;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-img-2 {
+    background-image: url(../img/header-bg-2-small.jpg);
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-img-3 {
+    background-image: url(../img/header-bg-3-small.jpg);
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-img-1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    background-color: #000;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+}
+
+.bg-img-2::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    background-color: #000;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+}
+
+.bg-img-3::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    background-color: #000;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+}
+
+#slider-area {
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    top: 0;
+    left: 0;
+}
+
+#slider-area .owl-item div {
+    height: 700px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.menu {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+
+a.logo {
+    font-size: 29px;
+    float: left;
+    display: inline-block;
+    color: #fff;
+    font-weight: 600;
+}
+
+a.logo:hover {
+    text-decoration: none;
+}
+
+a.logo span {
+    color: #fb0000;
+}
+
+.nav-link,
+.dropdown-item {
+    color: #fff !important;
+    background: transparent;
+}
+
+
+/* .nav-link:hover,
+.dropdown-item:hover {
+    border-bottom: 1px solid #fb0000;
+} */
+
+.dropdown-menu.show {
+    background: transparent;
+    border: none;
+}
+
+.menu-style {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.dropdown-item:hover {
+    background: none;
+    transition: 2s;
+}
+
+#navbarNavDropdown a {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+#navbarNavDropdown a::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 2px;
+    background: red;
+    transform: scaleX(0);
+    transition: transform .35s ease;
+}
+
+#navbarNavDropdown a:hover::after {
+    transform: scaleX(1);
+}
+
+.header-display {
+    width: 100%;
+    height: 450px;
+    align-items: center;
+}
+
+.header-section h4 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 27px;
+}
+
+.header-section p {
+    color: #fff;
+    font-weight: 300;
+    font-size: 13px;
+    padding: 14px 0px;
+}
+
+.header-btn-1,
+.header-btn-2 {
+    width: 150px;
+    height: 42px;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fb414e;
+    margin: 0px 10px;
+    justify-content: center;
+}
+
+.header-btn-1:hover,
+.header-btn-2:hover {
+    background: #fb414e;
+    transition: 0.5s;
+}
+
+
+/* service start */
+
+.service-features {
+    width: 100%;
+    height: 358px;
+    position: relative;
+}
+
+.service-content {
+    position: absolute;
+    height: 350px;
+    background: #202b30;
+    color: #fff;
+    padding: 31px;
+    top: -53px;
+    z-index: 1;
+}
+
+.service-content i.fa {
+    font-size: 54px;
+    padding: 8px 0px;
+}
+
+.service-content h4 {
+    font-size: 19px;
+    padding: 10px 0px 15px 0px;
+}
+
+.service-border-bottom {
+    width: 68px;
+    height: 4px;
+    background: #fff;
+    border-radius: 93px;
+}
+
+.service-content p {
+    padding: 21px 0px;
+    font-size: 15px;
+}
+
+.service-design {
+    position: absolute;
+    height: 350px;
+    background: #202b30;
+    color: #fff;
+    padding: 31px;
+    top: -53px;
+    z-index: 1;
+}
+
+.service-design i.fa {
+    font-size: 54px;
+    padding: 8px 0px;
+}
+
+.service-design h4 {
+    font-size: 19px;
+    padding: 10px 0px 15px 0px;
+}
+
+.service-border-bottom {
+    width: 68px;
+    height: 4px;
+    background: #fff;
+    border-radius: 93px;
+}
+
+.service-design p {
+    padding: 21px 0px;
+    font-size: 15px;
+}
+
+.service-seo {
+    position: absolute;
+    height: 350px;
+    background: #202b30;
+    color: #fff;
+    padding: 31px;
+    top: -53px;
+    z-index: 1;
+}
+
+.service-seo i.fa {
+    font-size: 54px;
+    padding: 8px 0px;
+}
+
+.service-seo h4 {
+    font-size: 19px;
+    padding: 10px 0px 15px 0px;
+}
+
+.service-border-bottom {
+    width: 68px;
+    height: 4px;
+    background: #fff;
+    border-radius: 93px;
+}
+
+.service-seo p {
+    padding: 21px 0px;
+    font-size: 15px;
+}
+
+.service-content:hover,
+.service-design:hover,
+.service-seo:hover {
+    background-color: #fb414e;
+    transition: 0.4s;
+}
+
+
+/* services start */
+
+.services-info h5 {
+    color: #fb414e;
+}
+
+.services-info h2 {
+    font-weight: 400;
+}
+
+.services-info h2 span {
+    color: #fb414e;
+}
+
+.services-info p {
+    padding: 10px 0px;
+    font-size: 0.8rem;
+}
+
+.services-strategy i.fa {
+    font-size: 55px;
+    padding: 10px 0px;
+}
+
+.services-strategy h5 {
+    padding: 6px 0px;
+    font-size: 26px;
+}
+
+.services-strategy p {
+    padding: 10px;
+    margin-bottom: 18px;
+}
+
+.services-strategy:hover {
+    box-shadow: 0px 0px 24px -7px #000;
+    transition: 0.4s;
+    transform: translateY(10px);
+}
+
+
+/* services end */
+
+
+/* service end */
+
+
+/* business start */
+
+.business-extra {
+    background: #202b30;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.business-info {
+    padding: 40px 0px;
+}
+
+.business-info h1 {
+    padding: 10px 0px;
+    color: #fff;
+}
+
+.business-info p {
+    padding: 10px 0px;
+    color: #fff;
+}
+
+.business-btn {
+    width: 150px;
+    height: 42px;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    margin: 0px 10px;
+    justify-content: center;
+}
+
+.business-btn:hover {
+    background: #fb414e;
+    transition: 0.5s;
+    border: none;
+}
+
+.business-img-1 {
+    background-image: url(../img/business-plan-1.jpg);
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 10px 0px;
+}
+
+.business-img-2 {
+    background-image: url(../img/business-plan-2.jpg);
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 10px 0px;
+}
+
+.business-img-1:hover,
+.business-img-2:hover {
+    background: #fb414e;
+    transition: .3s;
+}
+
+
+/* business details start */
+
+.business-elegant h4 {
+    font-size: 19px;
+    font-weight: 700;
+    padding: 10px 0px;
+}
+
+.business-elegant p {
+    color: #ababab;
+}
+
+.business-details {
+    width: 100%;
+    height: 477px;
+    display: flex;
+    align-items: center;
+    background: #f8f8f8;
+}
+
+.business-cost p {
+    color: #ababab;
+}
+
+
+/* business details end */
+
+
+/* business end */
+
+
+/* portfolio start */
+
+.portfolio-menu {
+    text-align: center;
+}
+
+.portfolio-menu ul li {
+    display: inline-block;
+    margin: 0;
+    list-style: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    /* height: 60px; */
+}
+
+.portfolio-menu ul li:hover {
+    border-bottom: 1px solid #fb414e;
+}
+
+.portfolio-item {
+    width: 100%;
+    margin: auto;
+}
+
+.portfolio-item .item {
+    width: 25%;
+    height: auto;
+    display: inline-block;
+}
+
+.portfolio-item .item img {
+    width: 100%;
+    height: 250px;
+    padding: 5px;
+}
+
+
+/* portfolio end */
+
+.client-about-extra {
+    width: 100%;
+}
+
+.client-about {
+    display: table-cell;
+    height: 450px;
+    vertical-align: middle;
+}
+
+.client-about button {
+    border: 1px solid #000;
+    width: 133px;
+    height: 42px;
+    background: #fff;
+    color: #000;
+}
+
+.client-about button:hover {
+    background: #202b30;
+    color: #fff;
+}
+
+.client-info h2 {
+    font-size: 34px;
+    font-weight: 400;
+}
+
+.client-info p {
+    font-size: 14px;
+    padding: 24px 0px;
+}
+
+.client-info button {
+    border: 1px solid #000;
+    padding: 7px 34px;
+    font-size: 14px;
+    font-weight: 700;
+    background: none;
+}
+
+.client-info button:hover {
+    border: 1px solid #000;
+    background-color: #202b30;
+    color: #fff;
+}
+
+.client-video {
+    height: 450px;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.client-video iframe {
+    width: 100%;
+    height: 273px;
+}
+
+
+/* client-logo s */
+
+.client-logo-extra {
+    width: 100%;
+    height: 325px;
+    background: #202b30;
+}
+
+.client-logo {
+    display: table-cell;
+    vertical-align: middle;
+    height: 325px;
+}
+
+img.client-logo-3,
+.client-logo-1,
+.client-logo-2,
+.client-logo-4 {
+    height: 74px;
+    width: 139px;
+    margin: 15px auto;
+    display: block;
+}
+
+.client-info {
+    display: table-cell;
+    height: 325px;
+    vertical-align: middle;
+}
+
+.client-info h2 {
+    color: #fff;
+    padding: 20px 0px;
+}
+
+.client-info p {
+    color: #fff;
+    padding: 10px 0px;
+}
+
+
+/* client-logo e */
+
+
+/* web design start */
+
+.web-design-extra {
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/bench-accounting.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.web-design-section {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 500px;
+}
+
+.web-design-section h2 {
+    padding: 15px 0px;
+}
+
+.web-design-section p {
+    padding: 10px 0px;
+    font-size: 14px;
+    color: #5e5e5e;
+}
+
+.web-design-database i.fa {
+    font-size: 41px;
+    color: #fb4653;
+    padding: 10px 0px;
+}
+
+.web-design-database h5 {
+    color: #5e5e5e;
+}
+
+.web-design-database p {
+    color: #5e5e5e;
+    padding: 10px 0px;
+}
+
+.web-design-graphics i.fa {
+    font-size: 41px;
+    color: #fb4653;
+    padding: 10px 0px;
+}
+
+.web-design-graphics h5 {
+    color: #5e5e5e;
+}
+
+.web-design-graphics p {
+    color: #5e5e5e;
+    padding: 10px 0px;
+}
+
+
+/* web design end */
+
+
+/* form start */
+
+.form-extra {
+    width: 100%;
+    margin: 50px 0px;
+}
+
+.form-info h1 {
+    text-indent: 96px;
+    font-weight: 701;
+    padding-bottom: 10px;
+}
+
+.form-info p {
+    color: #5e5e5e;
+    padding: 10px 0px;
+}
+
+form input,
+select,
+textarea {
+    border: 1px solid black !important;
+}
+
+.form-button button {
+    width: 100%;
+    height: 45px;
+    border: none;
+    background: #fb414e;
+    color: #fff;
+}
+
+
+/* form end */
+
+
+/* contact start */
+
+.contact-extra {
+    background: #202b30;
+}
+
+.footer-info p {
+    color: #fff;
+    padding: 8px;
+}
+
+.footer-info address {
+    color: #fff;
+    padding: 8px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.social-icon {
+    color: #fff;
+    padding: 8px;
+}
+
+.social-icon i.fa {
+    width: 23px;
+    height: 23px;
+    border: 1px solid #f8f8f8;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 23px;
+    background: #fb414e;
+    color: #202b30;
+    margin-right: 7px;
+}
+
+.social-icon i.fa:hover {
+    background-color: #fff;
+}
+
+.footer-contact p span {
+    color: #fff;
+    margin-left: auto;
+}
+
+.footer-form .col-7,
+.col-3 {
+    padding: 0px;
+}
+
+.footer-menu-style i.fa {
+    color: #fff;
+    line-height: 35px;
+}
+
+.footer-contact p {
+    padding-top: 24px;
+    width: 35%;
+    margin-left: auto;
+}
+
+form.footer-form input {
+    width: 100%;
+    border: none !important;
+    height: 34px;
+}
+
+form.footer-form button {
+    width: 75%;
+    height: 35px;
+    padding: 0;
+    border: none;
+    background: #fb414e;
+    color: #fff;
+}
+
+.footer-contact small {
+    color: #717d80;
+    float: right;
+    padding: 80px 0px 32px 0px;
+}
+
+
+/* contact end */
+
+
+/* services page start */
+
+
+/* services page start */
+
+
+/* services page start */
+
+
+/* services page start */
+
+
+/* services page start */
+
+.services-bg-img-1 {
+    background-image: url(../img/header-bg-1.jpg);
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.services-bg-img-1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    background-color: #f55c64;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+}
+
+.services-header-section {
+    width: 100%;
+    height: 700px;
+    align-items: center;
+}
+
+.services-header-info p {
+    color: #fff;
+}
+
+.services-header-info h3 {
+    color: #fff;
+    font-size: 37px;
+}
+
+.services-header-info h6 {
+    color: #fff;
+}
+
+
+/* services-seo */
+
+.ser-seo-extra,
+.ser-digital-extra,
+.ser-design-extra,
+.ser-support-extra {
+    width: 100%;
+    height: auto;
+}
+
+.ser-digital-extra,
+.ser-support-extra {
+    background-color: #f7f7f7;
+}
+
+.ser-seo,
+.ser-digital,
+.ser-design,
+.ser-support {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+}
+
+.ser-seo-img,
+.ser-digital-img,
+.ser-design-img,
+.ser-support-img {
+    background: red;
+    /* width: 100%;
+    height: 100%; */
+    border-radius: 50%;
+    width: 167px;
+    height: auto;
+}
+
+.ser-seo-img,
+.ser-design-img {
+    margin-right: auto;
+}
+
+.ser-digital-img,
+.ser-support-img {
+    margin-left: auto;
+}
+
+.ser-seo-position {
+    position: relative;
+    top: -27px;
+    left: -40px;
+}
+
+.ser-design-position {
+    position: relative;
+    top: -20px;
+    left: -40px;
+}
+
+.ser-digital-position {
+    position: relative;
+    bottom: -27px;
+    left: -40px;
+}
+
+.ser-support-position {
+    position: relative;
+    bottom: -27px;
+    left: -92px;
+}
+
+.ser-seo-position img,
+.ser-digital-position img,
+.ser-design-position img,
+.ser-support-position img {
+    width: 100%;
+    height: 100%;
+}
+
+.ser-support-position img {
+    transform: rotateY(180deg);
+}
+
+
+/* services page end */
